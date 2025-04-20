@@ -1,60 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Richard Andezon Chávez</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <div class="banner">
-        <video class="logo-video" src="" autoplay loop muted playsinline></video>
+    <!-- HEADER/NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-img-container">
+            <img src="./Multimedia/IMG_20250419_122518.jpg" alt="Foto de Richard Chávez" />
+        </div>
         <div class="texto-banner">
             <p>
-                Nuestra idea para el proyecto final de Generation surge a partir de la observación,
-                junto con nuestros compañeros, de la ausencia de una plataforma integrada para la
-                promoción y venta de obras y artesanías realizadas por artistas emergentes.
+                ¡Hola! Soy <strong>Richard Chávez</strong><br>
+                Desarrollador Full Stack
             </p>
         </div>
-    </div>
-    <section id="sobre-mi">
-        <h1>¡Hola! Soy [Tu Nombre]</h1>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="contenido">
+        <h1>Acerca de mí</h1>
         <p>
-            Soy desarrollador web en formación con una gran pasión por la tecnología.
-            Recientemente completé un bootcamp intensivo donde desarrollé proyectos
-            reales que me permitieron poner en práctica HTML, CSS, JavaScript y otras herramientas.
+            Soy un desarrollador web en formación con una profunda pasión por la tecnología y el aprendizaje continuo.
+            Actualmente estoy cursando un bootcamp intensivo donde he tenido la oportunidad de desarrollar proyectos reales,
+            aplicando herramientas como HTML, CSS, JavaScript y otras tecnologías del ecosistema web.
+        </p>
+        <p>
+            Aunque mi trayectoria laboral de los últimos siete años ha estado en un ámbito distinto, esa experiencia me ha
+            permitido enfrentar diversos retos tanto a nivel individual como en equipo. Gracias a ello, he desarrollado
+            habilidades clave como el análisis y la resolución de problemas, pensamiento creativo con enfoque práctico,
+            liderazgo y un alto sentido de la responsabilidad.
+        </p>
+        <p>
+            Estoy construyendo una nueva etapa profesional con entusiasmo, compromiso y una mentalidad abierta al crecimiento constante.
         </p>
     </section>
-    <section id="proyectos">
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="contenido">
         <h2>Proyectos</h2>
+
         <div class="proyecto">
-            <h3>Landing page para tienda de café</h3>
-            <p>Diseño responsivo con HTML y CSS. Incluye animaciones y formulario de contacto.</p>
-            <a href="https://github.com/tuusuario/proyecto-cafe" target="_blank">Ver código</a>
+            <h3>Bloc para Notas Rápidas</h3>
+            <p>Diseño con HTML y CSS. Incluye animaciones y formulario de contacto.</p>
+            <a href="https://github.com/Anderzon-1989/Notas-Rapidas.git" target="_blank" rel="noopener noreferrer">Ver código</a>
         </div>
 
         <div class="proyecto">
-            <h3>App de tareas (To-Do List)</h3>
-            <p>Aplicación web hecha con JavaScript para agregar, marcar y eliminar tareas.</p>
-            <a href="https://github.com/tuusuario/todo-app" target="_blank">Ver código</a>
+            <h3>Arteria - Página Web E-commerce</h3>
+            <p>Diseño responsivo con HTML, CSS y JavaScript. Enfocado en ventas de obras artísticas.</p>
+            <a href="https://github.com/Sergio100295/GenerationGrupo8_RepoProyectoFinal.git" target="_blank" rel="noopener noreferrer">Ver código</a>
         </div>
     </section>
-    <section id="habilidades">
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="contenido">
         <h2>Habilidades</h2>
         <ul>
-            <li>HTML5 / CSS3</li>
+            <li>HTML5 / CSS3: Aplicado a estructuras de páginas web de nivel básico.</li>
             <li>JavaScript</li>
             <li>Git y GitHub</li>
             <li>Diseño responsivo</li>
         </ul>
     </section>
-    <section id="contacto">
+
+<!-- CONTACTO / FOOTER -->
+<footer id="contacto" class="redes-contacto">
+    <div>
         <h2>Contacto</h2>
-        <p>Email: <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">/tuusuario</a></p>
-    </section>
+        <ul>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:richardanderzonchavez@gmail.com">richardanderzonchavez@gmail.com</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/richard-anderzon-ch%C3%A1vez-ramos-web-developer/" 
+                   target="_blank" rel="noopener noreferrer">
+                    Richard Andezon Chávez
+                </a>
+            </li>
+            <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/573242729412" target="_blank" rel="noopener noreferrer">
+                    Enviar mensaje por WhatsApp
+                </a>
+            </li>
+            <li>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/anderzon_19/" target="_blank" rel="noopener noreferrer">
+                    Sígueme en Instagram
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+    <!-- ANIMACIONES SCROLL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.contenido, .proyecto, .banner', {
+            delay: 200,
+            distance: '30px',
+            duration: 800,
+            origin: 'bottom',
+            easing: 'ease-in-out'
+        });
+    </script>
 </body>
 
 </html>

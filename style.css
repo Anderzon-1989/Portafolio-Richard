@@ -1,79 +1,182 @@
-.banner {
-    position: relative;
-    width: 100%;
-    height: 225px;
-    background-image: url('./multi/e74511b8f0acfe97ef34fca5b166ec51.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    color: rgba(253, 253, 253, 0.966);
-  }
-  
-  .logo-video {
-    height: 180px;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    border-radius: 100px;
-    filter: brightness(2);
-    margin-left: 5%;
-  }
-  
-  .texto-banner {
-    max-width: 60%;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-  }
-  @media (max-width: 768px) {
-    .logo-video {
-      width: 100px;
-      margin-bottom: 20px;
-    }
-  
-    .texto-banner {
-      max-width: 100%;
-      font-size: 1rem;
-      text-align: center;
-    }
-  
-    .contenido-superpuesto {
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-}
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-  }
-  
-  section {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  h1, h2 {
-    color: #2c3e50;
-  }
-  
-  .proyecto {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  a {
-    color: #3498db;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-  }
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+/* Para que el contenido no quede cubierto por la navbar */
+body {
+    padding-top: 60px; /* Ajusta este valor si tu navbar es más alta o más baja */
+}
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    text-align: center;
+}
+
+.banner-img-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.texto-banner p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* Secciones generales */
+.contenido {
+    max-width: 960px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.contenido h1,
+.contenido h2 {
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00adb5;
+    display: inline-block;
+}
+
+.contenido p {
+    margin-bottom: 1rem;
+}
+
+/* Proyectos */
+.proyecto {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 6px solid #00adb5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto h3 {
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #00adb5;
+    font-weight: 600;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+/* Habilidades */
+#habilidades ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+#habilidades li::before {
+    content: "✔";
+    color: #00adb5;
+    margin-right: 0.5rem;
+}
+
+/* Contacto / Footer */
+.redes-contacto {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.redes-contacto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.redes-contacto ul {
+    list-style: none;
+}
+
+.redes-contacto li {
+    margin: 0.5rem 0;
+}
+
+.redes-contacto a {
+    color: #00adb5;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.redes-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .texto-banner p {
+        font-size: 2rem;
+    }
+}
